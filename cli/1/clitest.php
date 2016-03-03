@@ -11,6 +11,7 @@ class Test
         $this->test = $test;
     }
 
+
     public function echoTest()
     {
         echo $this->test . "\n\n";
