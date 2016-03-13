@@ -1,13 +1,17 @@
 @extends('app')
 @section('content')
 
-@if ($first == 'John')
-    <h1>About me: Hi <?= $first; ?> </h1>
 
-@else
     <h1>About</h1>
+@if (count($people))
     <h3>People I Like:</h3>
-@endif
+
+    <ul>
+        @foreach($people as $person)
+            <li>{{ $person }}</li>
+            @endforeach
+    </ul>
+    @endif
 <p>
     Lorem ipsum bla bla....
 </p>

@@ -18,10 +18,16 @@ class PagesController extends Controller
 //            'first'=>'Ilina',
 //            'last'=>'Nedeva'
 //        ]);
-        $data = [];
-        $data['first']='Ilina';
-        $data['last']='Nedeva';
-        return view('pages.about',$data);
 
+//        $data = [];
+//        $data['first']='Ilina';
+//        $data['last']='Nedeva';
+//        return view('pages.about',$data);
+
+//        $people = [
+//            'Ilina' , 'Eric','Katya'
+//        ];
+        $people=[];
+        return view('pages.about',compact('people'));
     }
 }
